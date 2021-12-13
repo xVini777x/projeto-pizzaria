@@ -115,7 +115,7 @@ nav {
 
 .main_cta_content img{
     width: 21px;
-    margin-bottom: -5px;
+    margin: 0 2px 2px 0;
 }
 
 .main_cta_content h1{
@@ -208,15 +208,15 @@ nav {
     letter-spacing: 5px;
     margin-bottom: 10px;
     font-size: 20px;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
 }
 
-.text-section-2  p:before{
+.section-2-content header  p:before{
     width: 60px;
     border-bottom: 2px solid #A8804B;
     content: '';
     position: absolute;
-    bottom: 14.2222em;
+    padding-top: 50px;
 }
 
 .text-section-2  p{
@@ -588,9 +588,7 @@ nav {
 @media (max-width: 59em){
     .section-1-ice img{
         width: 890px;
-        margin-left: 8px;
-        margin-top: -16px;
-        margin-bottom: 20px;
+        margin-left: 0px;
     }
 
     .section-2-content h1 {
@@ -601,11 +599,8 @@ nav {
         margin-bottom: 15px;
     }
 
-    .section-2-content > header p {
-        letter-spacing: 5px;
-        margin-bottom: 15px;
-        font-size: 16px;
-        margin-bottom: 20px;
+    section-2-content header  p:before{
+        padding-top: 30px;
     }
 
     .section-3-content{
@@ -645,9 +640,7 @@ nav {
 @media (max-width: 52em){
     .section-1-ice img{
         width: 770px;
-        margin-left: -15px;
-        margin-top: -16px;
-        margin-bottom: 20px;
+        margin-left: 0px;
     }
 }
 
@@ -655,9 +648,7 @@ nav {
 @media (max-width: 48em){
     .section-1-ice img{
         width: 730px;
-        margin-left: -25px;
-        margin-top: -16px;
-        margin-bottom: 20px;
+        margin-left: 0px;
     }
 
     .section-3-content{
@@ -691,9 +682,7 @@ nav {
 @media (max-width: 45em){
     .section-1-ice img{
         width: 700px;
-        margin-left: -30px;
-        margin-top: -16px;
-        margin-bottom: 20px;
+        margin-left: 0px;
     }
 
     .section-3-content{
@@ -732,6 +721,22 @@ nav {
     }
 }
 
+/* 600pix */
+@media(max-width: 600px)
+{
+    .section-1-ice img{
+        width: 580px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 630px){
+        .section-1-ice img{
+        width: 600px;
+        margin-left: 0px;
+    }
+}
+
 /* 658pix */
 @media (max-width: 41em){
     .section-3{
@@ -765,11 +770,11 @@ nav {
     }
 }
 
-/* 480px  */
-@media (max-width: 30em){
+/* 500px  */
+@media (max-width: 500px){
     .section-1-ice img{
         width: 450px;
-        margin-left: -20px;
+        margin-left: 0px;
     }
 
     .main_cta_content h1{
@@ -794,8 +799,7 @@ nav {
     .section-3-content{
         color: #FFF;
         padding-right: 20px;
-        margin-top: 250px;
-        margin-left: -60px;
+        margin: 100px 100px;;
     }
 
     .section-3{
@@ -807,12 +811,6 @@ nav {
 
     .section-3 img  {
         width: 0px;
-    }
-
-    .section-3-content{
-        color: #FFF;
-        padding-right: 20px;
-        margin: 100px 80px;;
     }
 
     .section-5-content {
