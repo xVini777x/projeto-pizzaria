@@ -358,10 +358,20 @@ a {
   background-size: cover;
   position: relative;
 }
+@media only screen and (max-width: 480px) {
+  .main_header {
+    min-height: 80vh;
+  }
+}
 
 .nav-img img {
-  width: 120px;
+  width: 130px;
   padding: 15px;
+}
+@media only screen and (max-width: 992px) {
+  .nav-img img {
+    width: 100px;
+  }
 }
 
 nav {
@@ -373,7 +383,7 @@ nav {
 @media only screen and (max-width: 992px) {
   nav {
     width: 100%;
-    background: orangered;
+    background: #202023;
     position: fixed;
     box-shadow: 0 6px 15px black;
     z-index: 9999999;
@@ -454,9 +464,8 @@ nav {
 }
 .main-mobile #menuBtn {
   width: 30px;
-  position: fixed;
+  position: relative;
   right: 30px;
-  top: 20px;
   z-index: 2;
   cursor: pointer;
 }
@@ -482,11 +491,13 @@ nav {
 .main_cta .main_cta_content h1 {
   font-size: 3.5em;
   color: #fff;
+  text-transform: uppercase;
 }
 .main_cta .main_cta_content h2 {
   font-size: 3.5em;
   color: #ff6600;
   margin-bottom: 13px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 480px) {
   .main_cta .main_cta_content h1 {
@@ -522,15 +533,29 @@ nav {
   position: relative;
   z-index: 9999;
 }
+.section-1-ice article header {
+  text-align: center;
+  padding: 25px;
+  padding-bottom: 8px;
+}
+.section-1-ice article header h1 {
+  margin-bottom: 15px;
+  font-size: 2.2em;
+  color: black;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
 .section-1-ice article header p {
   color: black;
   margin-bottom: 15px;
   letter-spacing: 10px;
   font-size: 1.1em;
+  text-transform: uppercase;
 }
 .section-1-ice article p {
   color: #a8804b;
   line-height: 30px;
+  text-align: center;
 }
 .section-1-ice figure {
   margin-top: -100px;
@@ -549,17 +574,6 @@ nav {
     margin-top: -50px;
   }
 }
-.section-1-ice .text-section-1 {
-  text-align: center;
-  padding: 25px;
-  padding-bottom: 8px;
-}
-.section-1-ice .text-section-1 h1 {
-  margin-bottom: 15px;
-  font-size: 2.2em;
-  color: black;
-  letter-spacing: 10px;
-}
 
 /* SEGUNDA SESSÃO - MASSA  */
 .section-2 {
@@ -575,12 +589,14 @@ nav {
   letter-spacing: 5px;
   color: #000000;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 .section-2 .section-2-content header p {
   letter-spacing: 5px;
   margin-bottom: 10px;
   font-size: 20px;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 .section-2 .section-2-content header p:before {
   width: 60px;
@@ -636,12 +652,14 @@ nav {
   font-weight: 500;
   letter-spacing: 5px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .section-3 .section-3-content header p {
   font-size: 1.2em;
   font-weight: 300;
   letter-spacing: 5px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .section-3 .section-3-content p:nth-child(1) {
   font-size: 1.1em;
@@ -672,12 +690,14 @@ nav {
   font-weight: 500;
   letter-spacing: 6px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .section-4 .section-4-content header p {
   font-size: 1.5em;
   letter-spacing: 2px;
   font-weight: 300;
   margin-bottom: 35px;
+  text-transform: uppercase;
 }
 .section-4 .section-4-content p:nth-child(1) {
   color: #a8804b;
@@ -702,20 +722,21 @@ nav {
 /*   SESSÃO 5 - SVG FINAL   */
 .section-5 {
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
   background-image: url("images/imagem-final-svg.jpg");
   background-position: center center;
   background-size: cover;
   position: relative;
 }
 .section-5 header h1 {
-  font-size: 2.7em;
+  font-size: 2.5em;
   font-weight: 500;
   letter-spacing: 5px;
   text-align: center;
+  text-transform: uppercase;
   color: #fff;
   padding-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 .section-5 .section-5-content article {
   text-align: center;
@@ -725,8 +746,10 @@ nav {
 }
 .section-5 .section-5-content article h2 {
   color: #fff;
+  font-size: 20px;
   letter-spacing: 2px;
-  margin-bottom: 15px;
+  margin: 15 15px;
+  text-transform: uppercase;
 }
 .section-5 .section-5-content article p {
   color: #a8804b;
@@ -737,21 +760,22 @@ nav {
 .section-6 {
   width: 100%;
   text-align: center;
-  padding-top: 40px;
-  margin-bottom: 20px;
+  padding: 40px 20px;
 }
-.section-6 h1 {
+.section-6 header h1 {
   font-size: 3em;
   font-weight: 500;
   margin: 15px auto 15px;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
-.section-6 > header p {
+.section-6 header p {
+  text-transform: uppercase;
   font-size: 1.3em;
   font-weight: 400;
   letter-spacing: 3px;
 }
-.section-6 > p {
+.section-6 p:nth-child(2) {
   color: #a8804b;
   font-size: 1.1em;
   font-weight: 500;
@@ -760,168 +784,81 @@ nav {
 /*  FOOTER - SESSÃO FINAL  */
 .footer-section-7 {
   width: 100%;
-  padding: 20px;
   background: #0f0f0f;
 }
-
-.section-7-logo img {
-  width: 130px;
+.footer-section-7 figure img {
+  width: 100px;
   margin-top: -20px;
 }
-
 .footer-section-7 .footer-section-7-content {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 20px;
 }
-
-.footer-ul-1 ul li a {
+.footer-section-7 .footer-ul-1 ul li a {
   color: #fff;
   font-size: 12px;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
-.footer-ul-1 li {
+@media only screen and (max-width: 767px) {
+  .footer-section-7 .footer-ul-1 ul li a {
+    font-size: 11px;
+  }
+}
+.footer-section-7 .footer-ul-1 li {
   margin-bottom: 10px;
   list-style: none;
 }
-.footer-ul-1 img {
+.footer-section-7 .footer-ul-1 img {
   width: 20px;
   margin-bottom: -5px;
   margin-right: 5px;
 }
-.footer-ul-1 a:hover {
+.footer-section-7 .footer-ul-1 a:hover {
   color: #a8804b;
 }
-
-.footer-ul-2 ul li a {
+.footer-section-7 .footer-ul-2 ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
-.footer-ul-2 li {
+@media only screen and (max-width: 767px) {
+  .footer-section-7 .footer-ul-2 ul li a {
+    font-size: 11px;
+  }
+}
+.footer-section-7 .footer-ul-2 li {
   margin-bottom: 10px;
   list-style: none;
 }
-.footer-ul-2 a:hover {
+.footer-section-7 .footer-ul-2 a:hover {
   color: #a8804b;
 }
-
-.footer-svg img {
-  width: 21px;
+.footer-section-7 .footer-svg img {
+  width: 20px;
 }
-.footer-svg ul li {
+@media only screen and (max-width: 767px) {
+  .footer-section-7 .footer-svg img {
+    width: 16px;
+  }
+}
+.footer-section-7 .footer-svg ul li {
   list-style: none;
   display: inline-block;
   position: relative;
   padding: 8px 15px;
 }
-
-.footer-about ul li {
+.footer-section-7 .footer-about ul li {
   text-align: center;
   list-style: none;
   margin-top: 10px;
   letter-spacing: 1px;
 }
-.footer-about a {
+.footer-section-7 .footer-about a {
   color: #fff;
   font-size: 0.7em;
   font-weight: 100;
-}
-
-/* 1200px */
-@media (max-width: 75em) {
-  .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    padding: 8px 25px;
-  }
-}
-/* 1120px */
-@media (max-width: 70em) {
-  .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    padding: 8px 30px;
-  }
-}
-/* 950px */
-@media (max-width: 59em) {
-  .section-6 {
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 25px;
-  }
-}
-/* 768px */
-@media (max-width: 48em) {
-  .space-carrinho img {
-    margin-left: 80px;
-  }
-}
-/* 720pix */
-@media (max-width: 45em) {
-  .space-carrinho img {
-    margin-left: 65px;
-  }
-
-  .footer-ul-1 ul li a {
-    color: #fff;
-    font-size: 12px;
-    letter-spacing: 3px;
-    margin-right: 25px;
-  }
-
-  .footer-svg ul li {
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    padding: 10px 10px;
-  }
-  .footer-svg img {
-    width: 16px;
-  }
-}
-/* 658pix */
-@media (max-width: 41em) {
-  .section-6-text {
-    margin-top: -30px;
-  }
-}
-/* 500px  */
-@media (max-width: 500px) {
-  .section-6 h1 {
-    font-size: 2.2em;
-  }
-  .section-6 > header p {
-    font-size: 1.1em;
-  }
-  .section-6 > p {
-    font-size: 0.8em;
-  }
-
-  .section-6-text {
-    margin-top: -50px;
-  }
-
-  .footer-section-7 {
-    width: 100%;
-    padding: 20px;
-  }
-  .footer-section-7 .footer-section-7-content {
-    display: block;
-    padding-top: 15px;
-  }
-
-  .footer-ul-1 {
-    margin: 15px 0px 15px;
-  }
-
-  .footer-ul-2 {
-    margin-bottom: 15px;
-  }
 }
