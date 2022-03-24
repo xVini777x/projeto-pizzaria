@@ -2,6 +2,7 @@ const siteNav = document.querySelector('.js-site-nav')
 const menu = document.querySelector('.js-menu')
 const menuButton = document.querySelector('.js-menu-button')
 const navCurtain = document.querySelector('.js-nav-curtain')
+const navLinks = document.querySelector('.site-nav__menu')
 
 function mobileNavToggler() {
   const state = {
@@ -73,6 +74,7 @@ function mobileNavToggler() {
     },
 
     init() {
+      navLinks.addEventListener('click', this)
       menuButton.addEventListener('click', this)
       navCurtain.addEventListener('animationend', this)
     },
